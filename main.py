@@ -8,12 +8,12 @@ import os
 from openai import OpenAI
 import httpx
 
-OPENAI_API_KEY = "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"
+OPENAI_API_KEY = OpenApiKey
 
 openai = OpenAI(
     api_key=OPENAI_API_KEY,
     http_client=httpx.Client(
-        proxies="http://user154100:arqb1o@181.215.71.222:6114"),
+        proxies=PROXY),
 )
 
 
